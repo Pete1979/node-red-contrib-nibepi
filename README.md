@@ -1,4 +1,15 @@
 # node-red-contrib-nibepi
+## Electricity Price Optimization Algorithm
+
+This project includes an algorithm for optimizing electricity trading based on price data (hourly or 15-minute intervals). The algorithm identifies optimal buy and sell points within a configurable time window and minimum price spread.
+
+**Key functions:**
+- `findTradingOpportunities`: Finds all possible buy/sell pairs with a spread above a threshold.
+- `findOptimalCombination`: Selects the best set of non-overlapping trades for maximum profit.
+- `optimizeElectricityTrading`: Main entry point, returns optimal buy/sell points for a given price series.
+
+You can find the implementation in [`config_node.js`](config_node.js), starting with the `findTradingOpportunities` function.
+
 Node-RED plugins for NibePi interface for connecting to Nibe F series heatpump<br>
 <p>Link to downloadable image: http://anerdins.se/NibePi/nibepi_1.1_clean.rar</p>
 <p>Download the NibePi clean image file. Burn it to a 16GB SD-card and load it to the Raspberry Pi with the RS485 transciever.
